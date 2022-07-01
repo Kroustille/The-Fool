@@ -4,5 +4,6 @@ export const possible_actions = [
   'Dessiner',
   'Gueuler',
   'Dormir',
-  'Balayer'
+  'Balayer',
+  'Conduire'
 ]

@@ -3,5 +3,7 @@ export const possible_details = [
   'Rouge',
   'A côté',
   'Nuage',
-  'Saucisson'
+  'Saucisson',
+  'A l\'aube',
+  'En intérieur'
 ]

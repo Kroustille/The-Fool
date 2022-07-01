@@ -7,9 +7,15 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "sourceMap": false,
+    "baseUrl": "src/app",
+    "paths": {
+      "#/*": [
+        "*"
+      ]
+    }
   },
   "include": [
-    "src/scripts/**/*.ts"
+    "src/app/**/*.ts"
   ],
   "exclude": [
     "node_modules"

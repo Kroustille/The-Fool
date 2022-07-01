@@ -7,5 +7,11 @@ export const possible_actors = [
   'Cheveulu',
   'Blond',
   'Barbu',
-  'Aveugle'
+  'Aveugle',
+  'Chou',
+  'Oiseau',
+  'Dinosaure',
+  'Ouvrier',
+  'Soldat',
+  'Gueux'
 ] 
