@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "build": "rimraf dist; webpack",
+    "watch": "rimraf dist; webpack --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.3",
     "@typescript-eslint/parser": "^5.30.3",
+    "copy-webpack-plugin": "^11.0.0",
     "eslint": "^8.18.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.53.0",

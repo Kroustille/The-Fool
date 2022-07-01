@@ -1,0 +1,9 @@
+{
+  "name": "The Fool",
+  "short_name": "Fool",
+  "lang": "fr-FR",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "red",
+  "theme_color": "white"
+}

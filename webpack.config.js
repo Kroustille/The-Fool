@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
+const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
@@ -5,18 +8,18 @@ const entry = __dirname + '/src/scripts/index.ts'
 
 const output = {
   path: path.resolve(__dirname, './dist'),
-  filename: "build.js"
+  filename: 'build.js'
 }
 
 const resolve = {
-  extensions: [".ts", ".tsx", ".js", ".scss"],
+  extensions: [ '.ts', '.tsx', '.js', '.scss' ],
 }
 
 const rules = [
   {
     test: /\.tsx?$/,
     exclude: /node-modules/,
-    loader: "ts-loader"
+    loader: 'ts-loader'
   },
   {
     test: /\.s[ac]ss$/i,
@@ -26,7 +29,7 @@ const rules = [
         loader: 'file-loader',
         options: { name: '[name].css' }
       },
-      "sass-loader",
+      'sass-loader',
     ],
   },
 ]
@@ -38,6 +41,11 @@ const plugins = [
       removeComments: true,
       collapseWhitespace: true
     }
+  }),
+  new CopyPlugin({
+    patterns: [
+      { from: 'src/manifest.json', to: 'manifest.json' }
+    ]
   })
 ]
 
@@ -46,6 +54,8 @@ module.exports = {
   entry,
   output,
   resolve,
-  // rules,
+  module: {
+    rules,
+  },
   plugins
 }
