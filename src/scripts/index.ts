@@ -1,3 +1,5 @@
+import { pickAction, pickActor, pickDetails } from './random-picker'
+
 document.addEventListener('DOMContentLoaded', () => {
   const reset_button = document.getElementById('reset')
   if (!reset_button) {
@@ -13,18 +15,6 @@ const resetPickedValues = () => {
   actor.textContent = pickActor()
   action.textContent = pickAction()
   details.textContent = pickDetails()
-}
-
-const pickActor = () => {
-  return 'Pirate'
-}
-
-const pickAction = () => {
-  return 'Creuser'
-}
-
-const pickDetails = () => {
-  return 'Saucisson'
 }
 
 const getValueElements = () => {
