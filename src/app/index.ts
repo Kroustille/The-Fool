@@ -1,5 +1,7 @@
 import { init } from '#/ui/init'
+import { initStaticStorage } from '#/storage/static/init'
 
 document.addEventListener('DOMContentLoaded', () => {
-  init()
+  const repository = initStaticStorage()
+  init(repository)
 })

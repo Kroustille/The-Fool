@@ -47,7 +47,7 @@ const plugins = [
   }),
   new CopyPlugin({
     patterns: [
-      { from: 'src/manifest.json', to: 'manifest.json' }
+      { from: 'manifest.json', to: 'manifest.json' }
     ]
   })
 ]
